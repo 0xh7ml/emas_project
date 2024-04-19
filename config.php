@@ -1,3 +1,0 @@
-<?php
-// Database Config Page
-
