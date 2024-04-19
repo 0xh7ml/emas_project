@@ -1,8 +1,13 @@
 # Employee Attendance Management System
 
+![](/img/demo.png)
 
-### Author: Md Kamrul Islam Saikat
 
+
+**Author**: Md Kamrul Islam Saikat
+
+
+**Description:**
 Welcome to the Employee Attendance Management System using PHP-MYSQL! This project is designed to streamline and automate the process of tracking employee attendance within an organization. By leveraging this system, you can efficiently monitor employee check-ins, check-outs, absences, and generate insightful reports.
 
 ## Features:
@@ -14,7 +19,3 @@ Welcome to the Employee Attendance Management System using PHP-MYSQL! This proje
 - [ ] Attendance report
 - [ ] Security
 - [ ] Change the stack (Django-Postgresql)
-
-
-## Demo
-[](/img/demo.png)
