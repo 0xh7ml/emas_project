@@ -14,3 +14,7 @@ Welcome to the Employee Attendance Management System using PHP-MYSQL! This proje
 - [ ] Attendance report
 - [ ] Security
 - [ ] Change the stack (Django-Postgresql)
+
+
+## Demo
+[](/img/demo.png)
