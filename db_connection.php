@@ -16,3 +16,6 @@ if(mysqli_connect_error()){
     echo 'Connection Error' . mysqli_connect_error();
     exit();
 }
+else{
+    return TRUE;
+}

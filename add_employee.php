@@ -9,7 +9,7 @@
                         <h5 class="mb-0">Add Employee</h5>
                     </div>
                     <div class="card-body">
-                        <form id="addEmployeeForm" method="POST" action="/class_project/insert_emp.php">
+                        <form id="addEmployeeForm" method="POST" action="/emas_project/insert_emp.php">
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" class="form-control" id="name" name="name" required>

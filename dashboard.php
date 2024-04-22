@@ -32,9 +32,9 @@ include('header.php');
 
                                 $rows = $res->fetch_assoc();
                                 
-                                $record_id = $rows["record_id"];
+                                $record = $rows["in_time"];
 
-                                if($record_id){
+                                if($record != NULL){
                             ?>
                             <span><?php echo $rows['in_time']; ?></span>
                             </div>
@@ -61,9 +61,9 @@ include('header.php');
 
                                 $rows = $res->fetch_assoc();
                                 
-                                $record_id = $rows["record_id"];
+                                $out_record = $rows["out_time"];
 
-                                if($record_id){
+                                if($out_record != NULL){
                             ?>
                             <span><?php echo $rows['out_time']; ?></span>
                             </div>

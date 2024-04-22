@@ -20,7 +20,7 @@ if(isset($_POST['emp_id']) && isset($_POST['username']) && isset($_POST['passwor
                         <h5 class="mb-0">Add User</h5>
                     </div>
                     <div class="card-body">
-                        <form id="addUser" method="POST" action="/class_project/add_user.php">
+                        <form id="addUser" method="POST" action="/emas_project/add_user.php">
                             <div class="form-group mb-2">
                                 <label for="gender">Employee</label>
                                 <select class="form-control" name="emp_id" required>
