@@ -2,9 +2,12 @@
 <div class="container">
         <div class="row">
             <div class="d-flex flex-row justify-content-between mt-2 mb-2">
-
                 <h3>Attendance report</h3>
-                <button class="btn btn-danger" type="submit" id="download"><i class="bi bi-file-earmark-pdf"></i> PDF report</button>
+                    <form class="d-flex" role="search" method="GET">
+                    <input class="form-control me-2" type="search" placeholder="Search by Emp. Id" aria-label="Search" name="id">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <button class="btn btn-danger" type="submit" id="download"><i class="bi bi-file-earmark-pdf"></i> PDF report</button>
             </div>
             <table class="table table-bordered table-hover table-light" id="report">
                 <thead>
@@ -21,8 +24,13 @@
                 </thead>
                 <tbody>
                 <?php 
-
-                    $sql = "SELECT * FROM tb_attendance as attendance left join tb_employee as emp on attendance.employee_id = emp.emp_id";
+                    if(isset($_GET['id']) && !empty($_GET['id'])){
+                        $id = $_GET['id'];
+                        $sql = "SELECT * FROM tb_attendance as attendance left join tb_employee as emp on attendance.employee_id = emp.emp_id where emp.emp_id =" . $id;
+                    }
+                    else{
+                        $sql = "SELECT * FROM tb_attendance as attendance left join tb_employee as emp on attendance.employee_id = emp.emp_id";
+                    }
 
                     $res = mysqli_query(
                         $conn, $sql
